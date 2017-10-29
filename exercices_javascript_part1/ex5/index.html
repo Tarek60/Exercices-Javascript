@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>5</title>
+</head>
+<body>
+  <form>
+    <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+    <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+    <button  id="valider" value="calcul" name ="calculer" onClick="calcul();">Valider</button>
+  </form>
+  <script>
+  function calcul(){
+
+    var premier_nombre = document.getElementById('premier_nombre').value ;
+    var deuxieme_nombre = document.getElementById('deuxieme_nombre').value;
+    if(isNaN(premier_nombre) == false && isNaN(deuxieme_nombre) == false) {
+
+    var result = Math.trunc(premier_nombre) * (deuxieme_nombre);
+    alert(result);
+    }
+
+  }
+  </script>
+</body>
+</html>

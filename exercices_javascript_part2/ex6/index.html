@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="image1.jpg" onmouseover="changeImage(id);" onmouseout="returnImage(id)" id="image1"/>
+      <img src="image2.jpg" onmouseover="changeImage(id);" onmouseout="returnImage(id)" id="image2"/>
+      <img src="image3.jpg" onmouseover="changeImage(id);" onmouseout="returnImage(id)" id="image3"/>
+      <img src="image4.jpg" onmouseover="changeImage(id);" onmouseout="returnImage(id)" id="image4"/>
+      <img src="image5.jpg" onmouseover="changeImage(id);" onmouseout="returnImage(id)" id="image5"/>
+    </div>
+    <script>
+     function changeImage(image) {
+       document.getElementById(image).src=image+'_2.jpg';
+     }
+     function returnImage(image){
+       document.getElementById(image).src=image+'.jpg';
+     }
+    </script>
+  </body>
+</html>

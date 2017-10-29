@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img onmouseover="changeimage();" onmouseout="returnimage();" src="images/image1.jpg" id="image1" />
+  </body>
+  <script>
+  //On déclare une fonction grâce au mot-clé : function
+    function changeimage() {
+      //Grâce à console.log je peux afficher dans la console du texte
+      console.log('ça marche');
+      //On change l'attribut src de l'élément img
+      document.getElementById('image1').src="images/image1_2.jpg";
+    }
+  </script>
+</html>

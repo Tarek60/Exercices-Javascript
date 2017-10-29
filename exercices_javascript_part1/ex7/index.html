@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercice_7</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <form>
+    <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+    <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+    <button id="valider" name="valider" onclick="donnee()">Valider</button>
+  </form>
+  <script>
+
+    function donnee() {
+    var pointure = document.getElementById('pointure').value;
+    var annee = document.getElementById('annee').value;
+    var result = pointure * 2;
+    result += 5;
+    result *=50;
+    result -= annee;
+    result += 1766;
+    alert(result)
+    }
+
+
+  </script>
+</body>
+</html>

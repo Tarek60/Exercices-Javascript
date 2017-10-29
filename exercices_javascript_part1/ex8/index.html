@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercice_8</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <form>
+    <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+    <button id="valider" name="valider" onclick="donnee()">Valider</button>
+  </form>
+  <script>
+  function donnee(){
+    var age = document.getElementById('age').value;
+    if (isNaN(age) == false && age > 0){
+      if (age < 18){
+        alert('Vous êtes mineur')
+      } else {
+        alert('Vous êtes majeur')
+      }
+    } else {
+      alert()
+    }
+  }
+  </script>
+</body>
+</html>
